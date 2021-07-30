@@ -1,0 +1,15 @@
+server:
+  port: 80
+spring:
+  datasource:
+    druid:
+      enable: true
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=GMT%2B8&characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+jedis:
+  host: 127.0.0.1
+  port: 6379
+  password:
