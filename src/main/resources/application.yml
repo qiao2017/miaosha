@@ -13,3 +13,5 @@ jedis:
   host: 127.0.0.1
   port: 6379
   password:
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml

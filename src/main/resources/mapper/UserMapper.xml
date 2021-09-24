@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+
+    <select id="getUserByUserName" resultType="com.example.demo.bean.User">
+        select * from `user`
+        where user_name = #{userName}
+    </select>
+    <insert id="insertUser">
+        insert into `user`(
+            user_name,
+            password,
+            salt
+        )values(
+            #{user.userName},
+            #{user.password},
+            #{user.salt}
+        )
+    </insert>
+</mapper>
